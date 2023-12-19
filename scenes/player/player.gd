@@ -34,6 +34,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	handle_movement_input(delta)
 	update_camera(delta)
+	hit()
 
 func _physics_process(delta: float) -> void:
 	apply_gravity(delta)
